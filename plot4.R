@@ -11,9 +11,9 @@ data <- read.table("../R/household_power_consumption.txt", header = TRUE, sep = 
 subData = data[data$Date == "1/2/2007" | data$Date == "2/2/2007", ]
 
 # Set graphics device as png file.
-# To match with the sample output, set file width and height as 504,
+# To match with the sample output, set file width and height as 480,
 # and the background as transparent mode.
-png(filename = "plot4.png", width = 504, height = 504, bg = "transparent")
+png(filename = "plot4.png", width = 480, height = 480, bg = "transparent")
 # To correctly output the weekday's string, set locale as English.
 Sys.setlocale("LC_TIME", "English")
 # Get data's DateTime value by append data's Date and Time value,
